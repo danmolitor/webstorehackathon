@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Ultimate Webstore</title>
+    <link type="text/css" rel="stylesheet" href="dist/css/bootstrap.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>Welcome to the Ultimate Webstore!</h1></div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="showAll" href="#">Show All</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+<!--         <li id="books" class="label label-primary"><a href="#">Books</a></li>
+        <li id="music" class="label label-danger"><a href="#">Music</a></li> -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li id="books" ><a href="#">Books</a></li>
+            <li id="music"><a href="#">Music</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        <div id="content">
+<!--             <div class="product">
+                <div class="name"><h3></h3></div>
+                <div class="category"></div>
+                <div class="price"></div>
+                <img class="picture_url" src=>
+                <ul class="sellingpoints">
+                    <li id="point1"></li>
+                    <li id="point2"></li>
+                    <li id="point3"></li>
+                </ul>
+            </div> -->
+
+           <!--  <div class="product">
+                <div class="name"><h3></h3></div>
+                <div class="category"></div>
+                <div class="price"></div>
+                <img class="picture_url" src=>
+                <ul class="sellingpoints">
+                    <li id="point1"></li>
+                    <li id="point2"></li>
+                    <li id="point3"></li>
+                </ul>
+            </div> -->
+
+            <!-- <div class="product">
+                <div class="name"><h3></h3></div>
+                <div class="category"></div>
+                <div class="price"></div>
+                <img class="picture_url" src=>
+                <ul class="sellingpoints">
+                    <li id="point1"></li>
+                    <li id="point2"></li>
+                    <li id="point3"></li>
+                </ul>
+            </div>
+
+            <div class="product">
+                <div class="name"><h3></h3></div>
+                <div class="category"></div>
+                <div class="price"></div>
+                <img class="picture_url" src=>
+                <ul class="sellingpoints">
+                    <li id="point1"></li>
+                    <li id="point2"></li>
+                    <li id="point3"></li>
+                </ul>
+            </div> -->
+
+
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> -->
+<!--         <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> -->
+      </button>
+      <div id="footer" style="color: white; text-align: center; padding-top: 12px">Thank you!</div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+<!--         <li id="books" class="label label-primary"><a href="#">Books</a></li>
+        <li id="music" class="label label-danger"><a href="#">Music</a></li> -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+//Step 10 / 11 / 12
+var all_products = [
+
+        [ {
+            "product" : "book1",
+            "name": "The Phantom Tollbooth",
+            "category": "Children's Book",
+            "picture_url": "media/phantomtollbooth.jpg",
+            "price": "$6.00",
+            "sellingpoints": ["This is one of my favorite books ever.", "Great for kids. Great for Adults.", "You'll laugh, you'll cry."]
+        } ,  {
+            "product" : "book2",
+            "name": "Mossflower",
+            "category": "Children's Book",
+            "picture_url": "media/mossflower.jpg",
+            "price": "$7.99",
+            "sellingpoints": ["This is one of my favorite books ever.", "Great for the imagination.", "You'll laugh, you'll cry."]
+        } ] ,
+
+        [ {
+            "product" : "album1",
+            "name": "Blink 182",
+            "category": "Rock Album",
+            "picture_url": "media/blink182.jpeg",
+            "price": "$9.99",
+            "sellingpoints": ["This is one of my favorite albums.", "Great for adults.", "You'll laugh, you'll cry."]
+        } , {
+            "product" : "album2",
+            "name": "Coldplay",
+            "category": "Rock Album",
+            "picture_url": "media/vivalavida.jpg",
+            "price": "$9.99",
+            "sellingpoints": ["This is one of my favorite albums.", "Great for roadtrips.", "You'll laugh, you'll cry."]
+        } ]
+];
+
+
+        var add_to_page = function(array) {
+            for (var i = 0; i < array.length; i++) {
+                var arrayobject = array[i];
+                for (var a = 0; a < arrayobject.length; a++){
+                    var obj = arrayobject[a];
+                    for (var key in obj) {
+                    $('#content').append($('<div id="'+ obj.product + '"></div>').html($('<h3 class=name></h3>').text(obj.name)));
+                    $('#' + obj.product).append($('<div class=category></div>').text(obj.category));
+                    $('.picture_url').attr("style", "height: 225px");
+                    $('#' + obj.product).append($('<br>'));
+                    $('#' + obj.product).append($('<img class=picture_url></img>').attr("src", obj.picture_url));
+                    $('.picture_url').attr("style", "height: 225px");
+                    $('#' + obj.product).append($('<br>'));
+                    $('#' + obj.product).append($('<div class=price></div>').text(obj.price));
+                    $('#' + obj.product).append($('<ul class=sellingpoints></ul>'));
+                    $('#' + obj.product + ' > .sellingpoints').append($('<li id=point1></li>').text(obj.sellingpoints[0]));
+                    $('#' + obj.product + ' > .sellingpoints').append($('<li id=point2></li>').text(obj.sellingpoints[1]));
+                    $('#' + obj.product + ' > .sellingpoints').append($('<li id=point3></li>').text(obj.sellingpoints[2]));
+                    $('#' + obj.product).append($('<br>'));
+                    console.log(obj[key]);
+                    return;
+
+            }
+        }
+
+    }
+    // return;
+};
+
+add_to_page(all_products);
+
+
+$( "#books" ).click(function() {
+  $('#content').empty();
+  add_to_page(all_products[0]);
+});
+
+$( "#music" ).click(function() {
+  $('#content').empty();
+  add_to_page(all_products[1]);
+});
+
+$( "#showAll" ).click(function() {
+  $('#content').empty();
+  add_to_page(all_products);
+});
+
+// SEARCH BAR
+
+$( "btn btn-default" ).click(function() {
+    if (!!book_name.match(user_input)) {
+  $('#content').empty();
+  add_to_page(all_products);
+}
+});
+        // $('#book1 .name').text(book1.name);
+        // $('#book1 .category').text(book1.category);
+        // $('#book1 .picture_url').attr("src", book1.picture_url);
+        // $('#book1 .price').text(book1.price);
+        // $('#book1 .sellingpoints #point1').text(book1.sellingpoints[0]);
+        // $('#book1 .sellingpoints #point2').text(book1.sellingpoints[1]);
+        // $('#book1 .sellingpoints #point3').text(book1.sellingpoints[2]);
+
+        // $('#book2 .name').text(book2.name);
+        // $('#book2 .category').text(book2.category);
+        // $('#book2 .picture_url').attr("src", book2.picture_url);
+        // $('#book2 .price').text(book2.price);
+        // $('#book2  .sellingpoints #point1').text(book2.sellingpoints[0]);
+        // $('#book2  .sellingpoints #point2').text(book2.sellingpoints[1]);
+        // $('#book2  .sellingpoints #point3').text(book2.sellingpoints[2]);
+
+        // $('#album1 .name').text(album1.name);
+        // $('#album1 .category').text(album1.category);
+        // $('#album1 .picture_url').attr("src", album1.picture_url);
+        // $('#album1 .price').text(album1.price);
+        // $('#album1 .sellingpoints #point1').text(album1.sellingpoints[0]);
+        // $('#album1 .sellingpoints #point2').text(album1.sellingpoints[1]);
+        // $('#album1 .sellingpoints #point3').text(album1.sellingpoints[2]);
+
+        // $('#album2 .name').text(album2.name);
+        // $('#album2 .category').text(album2.category);
+        // $('#album2 .picture_url').attr("src", album2.picture_url);
+        // $('#album2 .picture_url').attr("style", "height: 225px");
+        // $('#album2 .price').text(album2.price);
+        // $('#album2 .sellingpoints #point1').text(album2.sellingpoints[0]);
+        // $('#album2 .sellingpoints #point2').text(album2.sellingpoints[1]);
+        // $('#album2 .sellingpoints #point3').text(album2.sellingpoints[2]);
+
+    </script>
+</body>
+
+</html>
